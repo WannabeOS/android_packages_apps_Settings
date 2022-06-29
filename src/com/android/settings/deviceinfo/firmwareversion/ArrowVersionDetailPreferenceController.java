@@ -42,8 +42,8 @@ public class ArrowVersionDetailPreferenceController extends BasePreferenceContro
     private static final int ACTIVITY_TRIGGER_COUNT = 3;
 
     private static final String KEY_ARROW_VERSION_PROP = "ro.modversion";
-    private static final String KEY_ARROW_RELEASETYPE_PROP = "ro.arrow.releasetype";
-    private static final String KEY_ARROW_ZIPTYPE_PROP = "ro.arrow.ziptype";
+    private static final String KEY_ARROW_RELEASETYPE_PROP = "ro.WANNABE.firmwareinfo";
+    private static final String KEY_ARROW_ZIPTYPE_PROP = "ro.WANNABE.buildtype";
 
     private final UserManager mUserManager;
     private final long[] mHits = new long[ACTIVITY_TRIGGER_COUNT];

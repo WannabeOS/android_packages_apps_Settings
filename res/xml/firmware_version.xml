@@ -18,14 +18,15 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
-    <!-- Arrow logo -->
-    <com.android.settingslib.widget.LayoutPreference
-        android:key="arrow_logo"
-        android:layout="@layout/arrow_logo"
-        android:selectable="false"/>
+    <!-- WannabeOS gimmick -->
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="lottie_wannabe_video"
+        settings:searchable="false"
+        app:lottie_rawRes="@raw/lottie_wannabe"/>>
 
     <!-- Android version
     <Preference
@@ -39,11 +40,20 @@
     <!-- Arrow version -->
     <Preference
         android:key="arrow_version"
-        android:title="@string/arrow_version"
+        android:title="@string/wannabe_version"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.ArrowVersionDetailPreferenceController"/>
+
+
+    <!-- WannabeOS maintainer -->
+    <Preference
+        android:key="maintainer"
+        android:title="@string/maintainer"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.WannabeMaintainerPreferenceController"/>
 
     <!-- Device name -->
     <Preference
