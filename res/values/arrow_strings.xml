@@ -15,6 +15,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Somethinghub -->
+    <string name="wannabe_customisation_title">Somethinghub</string>
+    <string name="wannabe_customisation_summary">All your needed Settings in one place !</string>
+
     <!-- String for removal of sensitive info on about, depending on tap -->
     <string name="device_info_protected_single_press">Tap to show info</string>
 

@@ -44,7 +44,17 @@ android_library {
         "SettingsLib-search-defaults",
     ],
 
-    srcs: ["src/**/*.java"],
+    srcs: [
+        "src/**/*.java",
+        "Somethinghub/src/**/*.java",
+        "Somethinghub/src/**/*.kt",
+    ],
+
+    resource_dirs: ["res",
+                    "Somethinghub/res",
+    ],
+
+    aaptflags: ["--extra-packages com.wannabe.somethinghub"],
 
     static_libs: [
         "androidx-constraintlayout_constraintlayout",
@@ -76,6 +86,7 @@ android_library {
         "windowExtLib",
         "VendorSupport-preference",
     ],
+
 
     libs: [
         "telephony-common",

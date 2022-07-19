@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/ic_battery_circle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="139dp"
+            android:gravity="center"
+            android:src="@drawable/ic_battery_circlerepo"
+            android:visibility="gone">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/battery_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:gravity="center"
+            android:layout_marginLeft="145dp"
+            android:src="@drawable/battery_svgrepo"
+            android:visibility="visible">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/battery_level_txt"
+            android:layout_width="match_parent"
+            android:text="69"
+            android:gravity="center"
+            android:layout_marginLeft="145dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="85dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/battery_styles"
+            android:layout_width="match_parent"
+            android:text="Battery Styles"
+            android:textColor="?android:attr/colorAccent"
+            android:gravity="center"
+            android:layout_marginRight="155dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="80dp"
+            android:layout_height="wrap_content">
+
+
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/ic_battery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:src="@drawable/ic_battery_style_background">
+
+        </ImageView>
+
+    </LinearLayout>
+
+</FrameLayout>
